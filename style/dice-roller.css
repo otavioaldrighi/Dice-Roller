@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: Alba;
+  src: url(../fonts/ALBA____.TTF);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  text-align: center;
+}
+
+/* TEXTS */
+
+.main-title{
+  font-family: Alba;
+  font-size: 2rem;
+
+  padding-top: 3rem;
+  
+}
+
+p#inputName{
+  font-family: Bebas Neue, sans-serif;
+  font-size: 1.2rem;
+
+}
+
+p#diceName{
+  font-family: Bebas Neue, sans-serif;
+  font-size: 1.2rem;
+}
+
+/* DICE CONTAINER */
+
+.dice-container{
+  padding-top: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* AUXILIAR INPUTS */
+
+.auxiliar-inputs{
+  padding-top: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.multiplier input{
+  height: 100px;
+  width: 130px;
+
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 5rem;
+  line-height: 100px;
+  text-align: center;
+}
+
+.result {
+  height: 110px;
+  width: 700px;
+
+  margin: 20px auto;
+
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3.5rem;
+  line-height: 100px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.addValue input{
+  height: 100px;
+  width: 130px;
+
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 5rem;
+  line-height: 100px;
+  text-align: center;
+}
+
+@media (max-width: 730px) {
+  .result{
+    width: 500px;
+  }
+}
+
+@media (max-width: 530px) {
+  .result{
+    height: 310px;
+    width: 300px;
+  }
+}

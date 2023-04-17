@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style/dice-roller.css">
+    <!-- Link to JS -->
+    <script src="javascript/dice-roller.js"></script>
+    <!-- Link to Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Dice Roller</title>
+</head>
+<body>
+    <div class="main-title">
+        <h1>Escolha seu dado</h1>
+    </div>
+
+
+    <div class="dice-container">
+        <!-- D4 -->
+        <button onclick="d4Roll()">
+            <img src="images/d4.png" alt="D4">
+            <p id="diceName">d4</p>
+        </button>
+
+        <!-- D6 -->
+        <button onclick="d6Roll()">
+            <img src="images/d6.png" alt="D6">
+            <p id="diceName">d6</p>
+        </button>
+
+        <!-- D8 -->
+        <button onclick="d8Roll()">
+            <img src="images/d8.png" alt="D8">
+            <p id="diceName">d8</p>
+        </button>
+
+        <!-- D10 -->
+        <button onclick="d10Roll()">
+            <img src="images/d10.png" alt="D10">
+            <p id="diceName">d10</p>
+        </button>
+
+        <!-- D12 -->
+        <button onclick="d12Roll()">
+            <img src="images/d12.png" alt="D12">
+            <p id="diceName">d12</p>
+        </button>
+
+        <!-- D20 -->
+        <button onclick="d20Roll()">
+            <img src="images/d20.png" alt="D20">
+            <p id="diceName">d20</p>
+        </button>
+    </div>
+
+    <div class="result">
+        <div id="display"></div>
+    </div>
+
+    <div class="auxiliar-inputs">
+
+        <div class="multiplier">
+            <div id="multiplier-display">
+                <input type="number" id="addDice" value="1" min="1">
+                <p id="inputName">Nº de Dados</p>
+            </div>
+        </div>   
+    
+        <div class="addValue">
+            <div id="addValue-display">
+                <input type="number" id="addValue" value="0" min="0">
+                <p id="inputName">Adicionar Valor</p>
+            </div>
+        </div> 
+
+    </div>
+
+</body>
+</html>
